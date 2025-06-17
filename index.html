@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Reader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Book Reader</h1>
+    <div class="book-view">
+      <img id="page-img" src="pages/page1.jpg" alt="Book Page" />
+    </div>
+    <div class="controls">
+      <button onclick="prevPage()">Previous</button>
+      <span id="page-number">Page 1 / 10</span>
+      <button onclick="nextPage()">Next</button>
+    </div>
+    <div class="go-to-page">
+      <input type="number" id="page-input" placeholder="Go to page..." min="1" />
+      <button onclick="goToPage()">Go</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
